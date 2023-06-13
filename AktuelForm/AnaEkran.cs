@@ -15,6 +15,7 @@ namespace AktuelForm
     public partial class AnaEkran : Form
     {
         public MySqlConnection mysqlbaglan = new MySqlConnection("Server=127.0.0.1;Database=akutel;Uid=root;Pwd='';");
+        public bool Veri { get; set; }
 
         public AnaEkran()
         {
@@ -66,7 +67,14 @@ namespace AktuelForm
 
         private void AnaEkran_Load(object sender, EventArgs e)
         {
-          
+            if (Veri)
+            {
+                button7.Visible = true;
+            }
+            else
+            {
+                button7.Visible = false;
+            }
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -102,6 +110,18 @@ namespace AktuelForm
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Admin admin=new Admin();
+            admin.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Duzen duzen=new Duzen();
+            duzen.Show();
         }
     }
 }

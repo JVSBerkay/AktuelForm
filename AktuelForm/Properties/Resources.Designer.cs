@@ -63,6 +63,16 @@ namespace AktuelForm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap desktop_wallpaper_soft_white_backgrounds_get_it_now_backgrounds_soft_background {
+            get {
+                object obj = ResourceManager.GetObject("desktop-wallpaper-soft-white-backgrounds-get-it-now-backgrounds-soft-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2023_06_12_at_17_52_53 {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp Image 2023-06-12 at 17.52.53", resourceCulture);

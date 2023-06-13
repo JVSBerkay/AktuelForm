@@ -24,6 +24,9 @@ namespace AktuelForm
 
         private void A101_Load(object sender, EventArgs e)
         {
+
+            
+
             string query = "SELECT Urun_adi FROM a101_urun WHERE a101_urun_id =1";
 
             {
@@ -204,7 +207,7 @@ namespace AktuelForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ana.Show();
+            
             this.Close();
         }
 
